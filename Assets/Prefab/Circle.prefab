@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7826264151867738502}
   - component: {fileID: 7826264151867738501}
   - component: {fileID: 7826264151867738500}
+  - component: {fileID: 1641845323}
+  - component: {fileID: 6487142177429035952}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -103,4 +105,35 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 3
+  m_Constraints: 4
+--- !u!58 &1641845323
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7826264151867738507}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &6487142177429035952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7826264151867738507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 959ca6572b05ce34c842c542d60c2862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aceleracao: 10
+  velocidadeMax: 50
+  jogadorRb: {fileID: 7826264151867738500}
