@@ -8,6 +8,8 @@ public class MoveJogador : MonoBehaviour
     public float velocidadeMax = 50.0f;
     public Rigidbody2D jogadorRb;
 
+    private bool Vivo = true;
+
 
     void FixedUpdate()
     {
